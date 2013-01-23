@@ -53,6 +53,10 @@ class PhotoUploader < CarrierWave::Uploader::Base
   #   "something.jpg" if original_filename
   # end
 
+  def default_url
+    "/images/fallback/" + [version_name, "default.png"].compact.join('_')
+  end
+
   process :convert => 'jpg'
   process :tags => ['photo']
   
