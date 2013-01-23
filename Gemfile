@@ -34,7 +34,7 @@ end
 
 gem 'jquery-rails'
 gem 'carrierwave'
-gem 'cloudinary'
+# gem 'cloudinary'
 gem 'simple_form'
 
 
