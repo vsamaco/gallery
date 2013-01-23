@@ -1,12 +1,10 @@
 %h1 Listing photos
 
-%table
+%table.table
   %tr
     %th Name
     %th Description
     %th Image
-    %th
-    %th
     %th
 
   - @photos.each do |photo|
@@ -14,9 +12,10 @@
       %td= photo.name
       %td= photo.description
       %td= photo.image
-      %td= link_to 'Show', photo
-      %td= link_to 'Edit', edit_photo_path(photo)
-      %td= link_to 'Destroy', photo, :confirm => 'Are you sure?', :method => :delete
+      %td
+        = link_to 'Show', photo, :class => 'btn btn-mini'
+        = link_to 'Edit', edit_photo_path(photo), :class => 'btn btn-mini'
+        = link_to 'Destroy', photo, :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger'
 
 %br
 
