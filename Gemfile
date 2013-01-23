@@ -31,8 +31,8 @@ end
 gem 'haml-rails'
 
 gem 'jquery-rails'
-# gem 'carrierwave'
-# gem 'cloudinary'
+gem 'carrierwave'
+gem 'cloudinary'
 gem 'simple_form'
 
 
