@@ -22,9 +22,14 @@ group :assets do
   gem 'compass-rails', '~> 1.0.3'
 end
 
+group :development do
+	gem 'haml-rails'
+end
+
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'cloudinary'
+gem 'simple_form'
 
 
 # To use ActiveModel has_secure_password
