@@ -33,7 +33,7 @@ group :development do
 end
 
 gem 'jquery-rails'
-gem 'carrierwave'
+# gem 'carrierwave'
 # gem 'cloudinary'
 gem 'simple_form'
 
