@@ -10,6 +10,10 @@
   %b Image:
   = @photo.image
 
+- if @photo.image?
+  %p= image_tag(@photo.image_url(:thumbnail))
+
+
 = link_to 'Edit', edit_photo_path(@photo)
 \|
 = link_to 'Back', photos_path

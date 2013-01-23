@@ -23,7 +23,15 @@
     .control-group
       .control-label= f.label :image
       .controls
-        .text_field= f.text_field :image
+        .file_field
+          = image_tag(@photo.image_url(:thumbnail)) if @photo.image?
+          = f.file_field :image
+          =f.hidden_field :image_cache
+        - if @photo.image?   
+        .remove-image
+        = f.check_box :remove_image
+          Remove image
+
   
     .form-actions
       = f.submit 'Save', :class => 'btn btn-primary'
