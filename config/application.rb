@@ -58,5 +58,9 @@ module Gallery
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.assets.enabled = true    # Enable the asset pipeline
+    config.assets.version = '1.0' # Version of your assets, change this if you want to expire all your assets
+    config.assets.initialize_on_precompile = false # Heroku requires this
   end
 end
